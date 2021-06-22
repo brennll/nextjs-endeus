@@ -1,0 +1,128 @@
+.navbarContainer {
+  width: 100%;
+  height: 70px;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  display: flex;
+
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdownButton {
+  font-size: 40px;
+  float: right;
+  text-align: center;
+}
+
+.containerItem {
+  width: 100%;
+  float: right;
+  padding-left:10px ;
+  padding-right:10px ;
+}
+
+.navbarContainer__button {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  background-color: #aaaaaa;
+}
+
+.navbarContainer__button2 {
+  display: none;
+}
+
+/* Footer  */
+.footerContainer {
+  width: 100%;
+  height: 50px;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgb(224, 224, 224);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.footerText {
+  height: 100%;
+  text-align: center;
+  
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) {
+  .navbarContainer {
+    width: 100%;
+    height: 140px;
+  
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .dropdownButton {
+    display: none;
+  }
+
+  .footerContainer {
+    visibility: hidden;
+  }
+
+  .containerItem {
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbarContainer__button2 {
+    color: #aaaaaa;
+    background: #fff;
+    border: 1px solid #009688;
+    font-size: 17px;
+    padding: 7px 12px;
+    font-weight: normal;
+    margin: 6px 0;
+    margin-right: 12px;
+    display: inline-block;
+    text-decoration: none;
+    min-width: 120px;
+  }
+  
+
+  .navbarContainer__button {
+    display: none;
+  }
+}
