@@ -11,11 +11,9 @@ const Layout = ({ children }) => {
   const toggleDropdown = () => {
     if (isOpen == '=') {
       setIsOpen('x')
-      document.body.classList.add('overflow-hidden');
     }
     else {
       setIsOpen('=')
-      document.body.classList.remove('overflow-hidden');
     }
   }
   
@@ -27,7 +25,7 @@ const Layout = ({ children }) => {
         <div className={ style.containerItem }>
           {
             isOpen === 'x' && (
-              <>
+              <><div className="white-app" />
                 <Link href='/artikel/features' onClick={ toggleDropdown }>
                     <a href="/artikel/features" className={ style.navbarContainer__button } onClick={  toggleDropdown }>Features</a>
                 </Link>
